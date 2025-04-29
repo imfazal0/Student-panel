@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student-panel</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Bowlby+One&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Nova+Round&family=Orbitron:wght@400..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300..700&family=Titan+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_circle" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <section class="Student">
+            <div class="studen-details"> 
+                <h1>Student details</h1>
+                <input type="text" name="Exam-code" id="exam-code" placeholder="Exam-Code"> 
+                <input type="text" name="name" id="student-name"  placeholder="Student-name">
+                <input type="text" name="roll-number" id="roll-number"  placeholder="Roll-Number">
+                <div class="button1">
+                    <button id="submit">Submit</button>
+                    <p class="check" ><span class="material-symbols-outlined">
+                        check_circle
+                        </span></p>
+                </div>
+            </div>
+            <div class="timer">
+                <div class="timer1" id="timer">30:00</div>
+            </div>
+        </section>
+        <section class="test">
+            <div class="question">You Entered wrong Exam id check (reload the page)</div>
+            <div class="options">
+                <ol type="A">
+
+                    <li id="optionA">reload the page</li>
+                    <li id="optionB">press f5</li>
+                    <li id="optionC">press ctrl+r</li>
+                    <li id="optionD">close the window</li>
+                </ol>
+                
+            </div>
+            <form class="radio">
+                <label>A</SPAN><input type="radio" name="answer" value="A"> </label>
+                <label>B<input type="radio" name="answer" value="B"> </label>
+                <label>C<input type="radio" name="answer" value="C"> </label>
+                <label>D<input type="radio" name="answer" value="D"> </label>
+              </form>
+            <div class="funbutton">
+                <button id="next">Next</button>
+            </div>
+
+        </section>
+
+
+
+        <script src="./js/student.js" type="module"></script>
+        <script src="./js/test.js" type="module"></script>
+</body>
+</html>
